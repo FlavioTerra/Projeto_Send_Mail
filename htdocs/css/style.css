@@ -1,0 +1,145 @@
+
+/*
+    -------------- Resets - Default  --------------
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+:root {
+    --branco: #fff;
+    --cinza_1: #e0e0e0;
+    --cinza_2: #b8b8b8;
+    --cinza_3: #a1a1a1;
+    --cinza_4: #4b4b4b;
+    --roxo_1: #b721ff;
+    --azul: #21d4fd;
+}
+
+/*
+    -------------- Header  --------------
+*/
+
+header#header_1{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header#header_1 h1 {
+    font-size: 200%;
+    color: var(--cinza_4);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header#header_1 p {
+    font-size: 120%;
+    color: var(--cinza_4);
+}
+
+/*
+    -------------- Main  --------------
+*/
+
+main .background-main header#header_2 {
+    background: var(--cinza_1);
+    padding: 15px 0px 15px 20px;
+}
+
+main .background-main header#header_2 h2 {
+    color: var(--roxo_1);
+    font-size: 1.2em;
+}
+
+main .background-main{
+    background: var(--branco);
+    box-shadow: 0px 0px 3px var(--cinza_3);
+    margin-top: 40px;
+    margin-bottom: 120px;
+    border-radius: 5px;
+}
+
+main form.form_1 {
+    width: 95%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+main form.form_1 .group_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    -------------- Main - inputs  --------------
+*/
+
+main form.form_1 .group_1 input,
+main form.form_1 .group_1 textarea {
+    margin-top: 8px;
+    margin-bottom: 25px;
+    height: 35px;
+    padding: 5px 0px 5px 15px;
+    color: var(--cinza_4);
+    border-radius: 5px;
+    border: var(--cinza_2) solid 1px;
+}
+
+main form.form_1 .group_1 input:focus,
+main form.form_1 .group_1 textarea:focus {
+    box-shadow: 0px 0px 5px var(--azul);
+    transition: 0.2s ease;
+    outline: 0;
+}
+
+main form.form_1 .group_1 textarea {
+    height: 7em;
+}
+
+main form.form_1 button {
+    width: 30%;
+    min-width: 170px;
+    height: 40px;
+    font-weight: bold;
+    color: var(--branco);
+    background: linear-gradient(to right, var(--azul), var(--roxo_1));
+    border-radius: 25px;
+    border: none;
+    margin-top: 15px;
+}
+
+main form.form_1 button:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+    cursor: pointer;
+}
