@@ -26,7 +26,7 @@
                     <form class="form_1" action="processa_envio.php" method="post">
                         <div class="group_1">
                             <label for="para">Para</label>
-                            <input type="email" name="para" placeholder="teste@dominio.com.br">
+                            <input type="email" name="para" placeholder="email@dominio.com.br">
                         </div>
                         <div class="group_1">
                             <label for="assunto">Assunto</label>
@@ -35,6 +35,16 @@
                         <div class="group_1">
                             <label for="mensagem">Mensagem</label>
                             <textarea name="mensagem"></textarea>
+                            <?
+                                if(isset($_GET['envio']) && $_GET['envio'] == 'erro') {
+                            ?>
+                                <div style="color: #FF0000;">
+                                    Preencha os campos corretamente!!!
+                                </div>
+                            <?
+                                }
+                            ?>     
+
                         </div>
                         <button type="submit">
                             Enviar Mensagem
